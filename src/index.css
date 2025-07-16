@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+/*Start of Navbar*/
+#nav{
+  background-color: white !important;
+}
+
+
+/*End of Navbar*/
+
 
 /*Start of Landing*/
 #hero-txt > h1{

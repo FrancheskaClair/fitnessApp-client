@@ -11,7 +11,7 @@ export default function Landing (){
 
 	return (
 		<>
-		<Row>
+		<Row className="mt-5 pt-4">
 		<Col className="my-5" id="hero-txt">
 		<h1>Your path to wellness, perfectly in sync.</h1>
 		<p>Track your fitness, sleep, nutrition, and mindfulness in one intuitive platform—designed to keep your body and mind moving in harmony.</p>
