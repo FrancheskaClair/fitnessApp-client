@@ -13,7 +13,7 @@ const WorkoutManager = () => {
   const token = localStorage.getItem('token');
 
   const getWorkouts = () => {
-    fetch('https://fitnessapp-api-ln8u.onrender.com/workouts/getMyWorkouts', {
+    fetch('https://fitnessapi-salvador.onrender.com/workouts/getMyWorkouts', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(res => res.json())
@@ -25,11 +25,10 @@ const WorkoutManager = () => {
           notyf.error("No workouts found.");
         }
       })
-      .catch(() => notyf.error('Failed to fetch workouts.'));
   };
 
   const deleteWorkout = (id) => {
-    fetch(`https://fitnessapp-api-ln8u.onrender.com/workouts/deleteWorkout/${id}`, {
+    fetch(`https://fitnessapi-salvador.onrender.com/workouts/deleteWorkout/${id}`, {
       method: 'DELETE',
       headers: { Authorization: `Bearer ${token}` }
     })
@@ -42,11 +41,10 @@ const WorkoutManager = () => {
           notyf.error('Workout not found.');
         }
       })
-      .catch(() => notyf.error('Failed to delete workout.'));
   };
 
   const completeWorkout = (id) => {
-    fetch(`https://fitnessapp-api-ln8u.onrender.com/workouts/completeWorkoutStatus/${id}`, {
+    fetch(`https://fitnessapi-salvador.onrender.com/workouts/completeWorkoutStatus/${id}`, {
       method: 'PATCH',
       headers: { Authorization: `Bearer ${token}` }
     })
@@ -59,11 +57,10 @@ const WorkoutManager = () => {
           notyf.error('Workout not found.');
         }
       })
-      .catch(() => notyf.error('Complete request failed.'));
   };
 
   const saveUpdatedWorkout = () => {
-    fetch(`https://fitnessapp-api-ln8u.onrender.com/workouts/updateWorkout/${editWorkout._id}`, {
+    fetch(`https://fitnessapi-salvador.onrender.com/workouts/updateWorkout/${editWorkout._id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -85,7 +82,6 @@ const WorkoutManager = () => {
           notyf.error('Workout not found.');
         }
       })
-      .catch(() => notyf.error('Update request failed.'));
   };
 
   useEffect(() => {

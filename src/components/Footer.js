@@ -21,9 +21,9 @@ export default function Footer(){
       <Col md="auto">
         <div className="d-flex gap-4">
           <Link to="/" className="text-decoration-none text-muted">Home</Link>
-          <Link to="/workouts" className="text-decoration-none text-muted">Workouts</Link>
           <Link to="/about" className="text-decoration-none text-muted">About Us</Link>
           <Link to="/login" className="text-decoration-none text-muted">Login</Link>
+          <Link to="/login" className="text-decoration-none text-muted">Sign Up</Link>
         </div>
       </Col>
     </Row>

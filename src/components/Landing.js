@@ -17,15 +17,12 @@ export default function Landing (){
 		<p>Track your fitness, sleep, nutrition, and mindfulness in one intuitive platform—designed to keep your body and mind moving in harmony.</p>
 		<div className="d-flex d-grid gap-2">
 		<Link className="btn" id="sign-btn" to="/register">Sign Up</Link>
-        <Link className="btn" id="contact-btn" to="/">Contact Us <CircleArrowRight size={20} strokeWidth={0.75} /></Link>
+        <Link className="btn" id="contact-btn" to="/aboutUs">Contact Us <CircleArrowRight size={20} strokeWidth={0.75} /></Link>
         </div>
-
-
 		</Col>
 
 		<Col>
 		 <img src={heroImg} alt="Description" />
-
 		</Col>
 
 		</Row>

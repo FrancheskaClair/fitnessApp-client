@@ -7,69 +7,73 @@ const AboutUs = () => {
     <section className="about-us-page py-5">
       <Container>
 
-        {/* Title Block */}
+        {/* Header */}
         <Row className="justify-content-center text-center mb-5">
-          <Col md={8}>
-            <div className="title-box p-4">
-              <h2 className="section-heading">About Us</h2>
-              <p className="section-subtitle">
-                Empowering your wellness journey through a beautifully synced platform.
+          <Col md={10}>
+            <div className="bg-light p-5 rounded shadow-sm">
+              <h2 className="mb-3 text-uppercase" style={{ color: '#96a852' }}>About Us</h2>
+              <p className="lead text-muted">
+                WellSync began in 2024 with a mission to make wellness accessible, simple, and engaging. We help individuals take control of their fitness journey through intuitive, user-friendly tools.
               </p>
             </div>
           </Col>
         </Row>
 
-        {/* Split Content Section */}
-        <Row className="gx-5 mb-5">
-          <Col md={6}>
-            <div className="info-box h-100 p-4">
-              <h4 className="subheading">Who We Are</h4>
-              <p className="info-text">
-                WellSync is built by passionate individuals who understand that wellness is personal. We believe in making health and fitness accessible,
-                motivating, and fun — through tools that are intuitive and designed with your journey in mind.
+        {/* Contact Info Section */}
+        <Row className="justify-content-center mb-5">
+          <Col md={10}>
+            <Card className="p-4 shadow-sm border-0">
+              <h4 className="mb-3 text-center" style={{ color: '#96a852' }}>Contact Us</h4>
+              <p className="text-muted text-center mb-4">
+                We're happy to answer your questions or hear your ideas!
               </p>
-            </div>
-          </Col>
-
-          <Col md={6}>
-            <div className="info-box h-100 p-4">
-              <h4 className="subheading">What We Offer</h4>
-              <p className="info-text">
-                From personalized workout tracking to wellness journaling, WellSync adapts to your lifestyle. We focus on simplicity,
-                accountability, and flexibility — because your path to wellness should feel natural and rewarding.
-              </p>
-            </div>
+              <Row className="text-center">
+                <Col md={4}>
+                  <h6>Email</h6>
+                  <p className="text-muted">support@wellsync.app</p>
+                </Col>
+                <Col md={4}>
+                  <h6>Phone</h6>
+                  <p className="text-muted">+63 912 345 6789</p>
+                </Col>
+                <Col md={4}>
+                  <h6>Location</h6>
+                  <p className="text-muted">Quezon City, Philippines</p>
+                </Col>
+              </Row>
+            </Card>
           </Col>
         </Row>
 
         {/* FAQ Section */}
         <Row className="justify-content-center">
           <Col md={10}>
-            <Card className="faq-card p-4">
-              <h3 className="faq-heading text-center mb-4">Frequently Asked Questions</h3>
+            <Card className="p-4 shadow-sm border-0">
+              <h4 className="mb-4 text-center" style={{ color: '#96a852' }}>FAQs</h4>
               <Accordion flush>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>Is WellSync free to use?</Accordion.Header>
                   <Accordion.Body>
-                    Yes, you can start using WellSync for free. Premium features are available for enhanced tracking and insights.
+                    Yes, WellSync is free to get started with. We also offer optional premium features for advanced users.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
-                  <Accordion.Header>Can I track both workouts and wellness?</Accordion.Header>
+                  <Accordion.Header>Can I track both workouts and wellness habits?</Accordion.Header>
                   <Accordion.Body>
-                    Absolutely. Log your fitness routines, nutrition, sleep, and even your mood — all in one place.
+                    Yes! You can track workouts, meals, sleep, mood, and more — all from one dashboard.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
-                  <Accordion.Header>Is WellSync mobile-friendly?</Accordion.Header>
+                  <Accordion.Header>Is it mobile-friendly?</Accordion.Header>
                   <Accordion.Body>
-                    Yes. WellSync is fully responsive and works seamlessly across smartphones, tablets, and desktops.
+                    Absolutely. WellSync is fully responsive and works great on smartphones, tablets, and desktops.
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
             </Card>
           </Col>
         </Row>
+
       </Container>
     </section>
   );

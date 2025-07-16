@@ -27,7 +27,7 @@ function App() {
     localStorage.clear();
   };
   useEffect(()=> {
-      fetch('https://fitnessapp-api-ln8u.onrender.com/users/details', {
+      fetch('https://fitnessapi-salvador.onrender.com/users/details', {
         headers : {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -69,7 +69,6 @@ function App() {
             <Route path="/logout" element={<Logout />} />
             <Route path="/workouts" element={<Workout />} />
             <Route path="/aboutUs" element={<AboutUs />} />
-            
           </Routes>
         </Container>
         <Footer/>

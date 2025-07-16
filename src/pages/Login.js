@@ -24,7 +24,7 @@ export default function Login() {
     function authenticate(e) {
 
         e.preventDefault();
-		fetch('https://fitnessapp-api-ln8u.onrender.com/users/login',{
+		fetch('https://fitnessapi-salvador.onrender.com/users/login',{
 
 		method: 'POST',
 		headers: {
@@ -66,7 +66,7 @@ export default function Login() {
 
     const retrieveUserDetails = (token) => {
 
-        fetch('https://fitnessapp-api-ln8u.onrender.com/users/details', {
+        fetch('https://fitnessapi-salvador.onrender.com/users/details', {
             headers: {
                 Authorization: `Bearer ${ token }`
             }
@@ -110,7 +110,7 @@ export default function Login() {
 	                <Form.Label>Password</Form.Label>
 	                <Form.Control 
 	                    type="password" 
-	                    placeholder="Password"
+	                    placeholder="Enter password"
 	                    value={password}
             			onChange={(e) => setPassword(e.target.value)}
 	                    required

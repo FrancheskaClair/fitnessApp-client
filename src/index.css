@@ -33,7 +33,7 @@ img{
   width: 600px;
 }
 
-#sign-btn{
+#sign-btn {
   background-color: #96a852;
   outline: none;
   border: 1px solid #96a852;
@@ -41,17 +41,28 @@ img{
   border-radius: 0;
   width: 100px;
   color: white;
-
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
+
+#sign-btn:hover {
+  background-color: #c0d571;
+  color: white;
+  border: 1px solid #c0d571;
+}
+
 
 #contact-btn {
   background-color: white;
   color: black;
   border: 2px solid white;
-  outline: none;
-  box-shadow: none !important;
   border-radius: 0;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
+
+#contact-btn:hover {
+  color: #9d5a38;
+}
+
 
 /* Theme Variables */
 :root {
@@ -160,27 +171,31 @@ img{
 /*Start of Login*/
 #login-form{
   width: 500px;
-  border: 1px solid lightgray;
+  border: 1px solid #96a852;
   padding: 3rem;
+  border-radius: 15px;
 }
 
 #login-btn{
   width: 100%;
-  background-color: ;
+  background-color: #96a852;
+  border: 1px solid  #96a852;
 }
 
 /*End of Login*/
 
 /*Start of Register*/
 #sign-form{
-  width: 500px;
-  border: 1px solid lightgray;
+  width: 600px;
+  border: 1px solid #96a852;
   padding: 3rem;
+  border-radius: 15px;
 }
 
 #signup-btn{
   width: 100%;
-  background-color: ;
+  background-color: #96a852;
+  border: 1px solid  #96a852;
 }
 /*End of Register*/
 
