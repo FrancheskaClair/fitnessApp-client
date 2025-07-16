@@ -15,13 +15,6 @@
 
 
 /*Start of Landing*/
-#hero{
-  background-image: url('');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 #hero-txt > h1{
   font-family: 'Merriweather';
 font-style: normal;

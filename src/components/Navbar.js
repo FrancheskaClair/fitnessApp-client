@@ -15,7 +15,7 @@ export default function NavbarApp() {
   const {user} = useContext(UserContext);
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary p-3" id="nav">
+    <Navbar expand="lg" className="bg-body-tertiary fixed-top p-3" id="nav">
       <Container>
         <Navbar.Brand as={Link} to="/">WellSync</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
