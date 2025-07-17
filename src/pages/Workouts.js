@@ -89,7 +89,7 @@ const WorkoutManager = () => {
   }, []);
 
   return (
-    <div className="container py-4">
+    <div className="container py-4 mt-5">
       <h2 className="text-center mb-4">Workout Manager</h2>
 
       <div className="d-flex justify-content-end mb-3">

@@ -4,7 +4,7 @@ import '../index.css';
 
 const AboutUs = () => {
   return (
-    <section className="about-us-page py-5">
+    <section className="about-us-page py-5 mt-5">
       <Container>
 
         {/* Header */}

@@ -7,7 +7,7 @@
 
 /*Start of Navbar*/
 #nav{
-  background-color: white !important;
+  background-color: #96a852 !important;
 }
 
 
@@ -166,6 +166,7 @@ img{
   width: 500px;
   border: 1px solid #96a852;
   padding: 3rem;
+  margin-top: 3rem;
   border-radius: 15px;
 }
 
@@ -182,6 +183,7 @@ img{
   width: 600px;
   border: 1px solid #96a852;
   padding: 3rem;
+  margin-top: 3rem;
   border-radius: 15px;
 }
 

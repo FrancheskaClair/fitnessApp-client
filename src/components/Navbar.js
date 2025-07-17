@@ -17,24 +17,24 @@ export default function NavbarApp() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary fixed-top p-3" id="nav">
       <Container>
-        <Navbar.Brand as={Link} to="/">WellSync</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="text-light">WellSync</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto d-flex d-grid gap-5">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/" className="text-light">Home</Nav.Link>
             {(user.id !== null) 
                         
               ? 
                 <>
-                  <Nav.Link as={NavLink} to="/workouts" exact="true">Workouts</Nav.Link>
-                  <Nav.Link as={Link} to="/aboutUs">About Us</Nav.Link>
-                  <Nav.Link as={Link} to="/logout">Logout</Nav.Link>
+                  <Nav.Link as={NavLink} to="/workouts" exact="true" className="text-light">Workouts</Nav.Link>
+                  <Nav.Link as={Link} to="/aboutUs" className="text-light">About Us</Nav.Link>
+                  <Nav.Link as={Link} to="/logout" className="text-light">Logout</Nav.Link>
                 </>
               : 
                 <>
-                  <Nav.Link as={Link} to="/aboutUs">About Us</Nav.Link>
-                  <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                  <Nav.Link as={Link} to="/register">Sign Up</Nav.Link>
+                  <Nav.Link as={Link} to="/aboutUs" className="text-light">About Us</Nav.Link>
+                  <Nav.Link as={Link} to="/login" className="text-light">Login</Nav.Link>
+                  <Nav.Link as={Link} to="/register" className="text-light">Sign Up</Nav.Link>
                 </>
             }
             
